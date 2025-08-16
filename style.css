@@ -1,0 +1,129 @@
+	html, body {
+		height: 100%;
+		margin: 0;
+
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		font-family: Arial, sans-serif;
+		background-color: #f4f4f4;
+
+
+	}
+/*Шапка */
+header {
+	background-color: #333;
+	color: white;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+
+
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+
+}
+nav ul li {
+	position: relative;
+
+}
+nav ul li a {
+	color: white;
+	padding: 10px 15px;
+	display: block;
+	text-decoration: none;
+
+}
+nav ul li a: hover {
+	background-color: #555;
+
+
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #444;
+	min-width: 150px;
+
+
+}
+nav ul ul li {
+	width: 100%;
+}
+nav ul li:hover > ul {
+	display: block;
+}
+/* Аватар */
+.avatar {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 5px;
+}
+/*Контент */
+main {
+	flex: 1;
+	padding: 20px;
+	max-width: 900px;
+	margin: auto;
+
+
+}
+h1, h2 {
+	color: #333;
+
+}
+section{
+	background: white;
+	padding: 20px;x
+	margin-bottom: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+ul{
+	margin: 0;
+	padding-left: 20px;
+
+}
+
+/* Футер */
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px;
+
+}
+
+/*Для мобільних: аватар по центру */
+"@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+
+	}
+	nav {
+		order: 2;
+	}
+
+}
+.avatar {
+	order: 1;
+	margin: 10px auto;
+}
+
+}
+
